@@ -7,7 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-	<title>HTML Template</title>
+	<title>Arkitecto Web</title>
 
 	<!-- Google font -->
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CVarela+Round" rel="stylesheet">
@@ -40,7 +40,7 @@
 	<!-- Header -->
 	<header id="home">
 		<!-- Background Image -->
-		<div class="bg-img" style="background-image: url('./img/background1.jpg');">
+		<div class="bg-img" style="background-image: url('./assets/img/background1.jpg');">
 			<div class="overlay"></div>
 		</div>
 		<!-- /Background Image -->
@@ -52,7 +52,7 @@
 				<div class="navbar-header">
 					<!-- Logo -->
 					<div class="navbar-brand">
-						<a href="index.html">
+						<a href="#home">
 							<img class="logo" src="assets/img/logo.png" alt="logo">
 							<img class="logo-alt" src="assets/img/logo-alt.png" alt="logo">
 						</a>
@@ -68,18 +68,18 @@
 
 				<!--  Main navigation  -->
 				<ul class="main-nav nav navbar-nav navbar-right">
-					<li><a href="#home">Home</a></li>
-					<li><a href="#about">About</a></li>
-					<li><a href="#portfolio">Portfolio</a></li>
-					<li><a href="#service">Services</a></li>
-					<li><a href="#pricing">Prices</a></li>
-					<li><a href="#team">Team</a></li>
+					<li><a href="#home">Inicio</a></li>
+					<li class="hidden"><a href="#about">Nosotros</a></li>
+					<li><a href="#service">Servicios</a></li>
+					<li><a href="#portfolio">Portafolio</a></li>
+					<li><a href="#pricing">Precios</a></li>
+					<li class="hidden"><a href="#team">Equipo</a></li>
 					<li class="has-dropdown"><a href="#blog">Blog</a>
 						<ul class="dropdown">
-							<li><a href="blog-single.html">blog post</a></li>
+							<li><a href="https://blog.arkitectoweb.com" target="_blank">Ir al blog</a></li>
 						</ul>
 					</li>
-					<li><a href="#contact">Contact</a></li>
+					<li><a href="#contact">Contacto</a></li>
 				</ul>
 				<!-- /Main navigation -->
 
@@ -96,10 +96,12 @@
 					<div class="col-md-10 col-md-offset-1">
 						<div class="home-content">
 							<h1 class="white-text">We Are Creative Agency</h1>
-							<p class="white-text">Morbi mattis felis at nunc. Duis viverra diam non justo. In nisl. Nullam sit amet magna in magna gravida vehicula. Mauris tincidunt sem sed arcu. Nunc posuere.
+							<p class="white-text">Morbi mattis felis at nunc. Duis viverra diam non justo. In nisl.
+								Nullam sit amet magna in magna gravida vehicula. Mauris tincidunt sem sed arcu. Nunc
+								posuere.
 							</p>
-							<button class="white-btn">Get Started!</button>
-							<button class="main-btn">Learn more</button>
+							<a href="#service" class="white-btn">Desarrollo web</a>
+							<a href="#pricing" class="main-btn">Hosting</a>
 						</div>
 					</div>
 					<!-- /home content -->
@@ -113,7 +115,7 @@
 	<!-- /Header -->
 
 	<!-- About -->
-	<div id="about" class="section md-padding">
+	<div id="about" class="section md-padding hidden">
 
 		<!-- Container -->
 		<div class="container">
@@ -168,6 +170,90 @@
 
 	</div>
 	<!-- /About -->
+
+	<!-- Service -->
+	<div id="service" class="section md-padding">
+
+		<!-- Container -->
+		<div class="container">
+
+			<!-- Row -->
+			<div class="row">
+
+				<!-- Section header -->
+				<div class="section-header text-center">
+					<h2 class="title">What we offer</h2>
+				</div>
+				<!-- /Section header -->
+
+				<!-- service -->
+				<div class="col-md-4 col-sm-6">
+					<div class="service">
+						<i class="fa fa-diamond"></i>
+						<h3>App Development</h3>
+						<p>Maecenas tempus tellus eget condimentum rhoncus sem quam semper libero.</p>
+					</div>
+				</div>
+				<!-- /service -->
+
+				<!-- service -->
+				<div class="col-md-4 col-sm-6">
+					<div class="service">
+						<i class="fa fa-rocket"></i>
+						<h3>Graphic Design</h3>
+						<p>Maecenas tempus tellus eget condimentum rhoncus sem quam semper libero.</p>
+					</div>
+				</div>
+				<!-- /service -->
+
+				<!-- service -->
+				<div class="col-md-4 col-sm-6">
+					<div class="service">
+						<i class="fa fa-cogs"></i>
+						<h3>Creative Idea</h3>
+						<p>Maecenas tempus tellus eget condimentum rhoncus sem quam semper libero.</p>
+					</div>
+				</div>
+				<!-- /service -->
+
+				<!-- service -->
+				<div class="col-md-4 col-sm-6">
+					<div class="service">
+						<i class="fa fa-diamond"></i>
+						<h3>Marketing</h3>
+						<p>Maecenas tempus tellus eget condimentum rhoncus sem quam semper libero.</p>
+					</div>
+				</div>
+				<!-- /service -->
+
+				<!-- service -->
+				<div class="col-md-4 col-sm-6">
+					<div class="service">
+						<i class="fa fa-pencil"></i>
+						<h3>Awesome Support</h3>
+						<p>Maecenas tempus tellus eget condimentum rhoncus sem quam semper libero.</p>
+					</div>
+				</div>
+				<!-- /service -->
+
+				<!-- service -->
+				<div class="col-md-4 col-sm-6">
+					<div class="service">
+						<i class="fa fa-flask"></i>
+						<h3>Brand Design</h3>
+						<p>Maecenas tempus tellus eget condimentum rhoncus sem quam semper libero.</p>
+					</div>
+				</div>
+				<!-- /service -->
+
+			</div>
+			<!-- /Row -->
+
+		</div>
+		<!-- /Container -->
+
+	</div>
+	<!-- /Service -->
 
 
 	<!-- Portfolio -->
@@ -284,91 +370,6 @@
 	</div>
 	<!-- /Portfolio -->
 
-	<!-- Service -->
-	<div id="service" class="section md-padding">
-
-		<!-- Container -->
-		<div class="container">
-
-			<!-- Row -->
-			<div class="row">
-
-				<!-- Section header -->
-				<div class="section-header text-center">
-					<h2 class="title">What we offer</h2>
-				</div>
-				<!-- /Section header -->
-
-				<!-- service -->
-				<div class="col-md-4 col-sm-6">
-					<div class="service">
-						<i class="fa fa-diamond"></i>
-						<h3>App Development</h3>
-						<p>Maecenas tempus tellus eget condimentum rhoncus sem quam semper libero.</p>
-					</div>
-				</div>
-				<!-- /service -->
-
-				<!-- service -->
-				<div class="col-md-4 col-sm-6">
-					<div class="service">
-						<i class="fa fa-rocket"></i>
-						<h3>Graphic Design</h3>
-						<p>Maecenas tempus tellus eget condimentum rhoncus sem quam semper libero.</p>
-					</div>
-				</div>
-				<!-- /service -->
-
-				<!-- service -->
-				<div class="col-md-4 col-sm-6">
-					<div class="service">
-						<i class="fa fa-cogs"></i>
-						<h3>Creative Idea</h3>
-						<p>Maecenas tempus tellus eget condimentum rhoncus sem quam semper libero.</p>
-					</div>
-				</div>
-				<!-- /service -->
-
-				<!-- service -->
-				<div class="col-md-4 col-sm-6">
-					<div class="service">
-						<i class="fa fa-diamond"></i>
-						<h3>Marketing</h3>
-						<p>Maecenas tempus tellus eget condimentum rhoncus sem quam semper libero.</p>
-					</div>
-				</div>
-				<!-- /service -->
-
-				<!-- service -->
-				<div class="col-md-4 col-sm-6">
-					<div class="service">
-						<i class="fa fa-pencil"></i>
-						<h3>Awesome Support</h3>
-						<p>Maecenas tempus tellus eget condimentum rhoncus sem quam semper libero.</p>
-					</div>
-				</div>
-				<!-- /service -->
-
-				<!-- service -->
-				<div class="col-md-4 col-sm-6">
-					<div class="service">
-						<i class="fa fa-flask"></i>
-						<h3>Brand Design</h3>
-						<p>Maecenas tempus tellus eget condimentum rhoncus sem quam semper libero.</p>
-					</div>
-				</div>
-				<!-- /service -->
-
-			</div>
-			<!-- /Row -->
-
-		</div>
-		<!-- /Container -->
-
-	</div>
-	<!-- /Service -->
-
-
 	<!-- Why Choose Us -->
 	<div id="features" class="section md-padding bg-grey">
 
@@ -383,7 +384,9 @@
 					<div class="section-header">
 						<h2 class="title">Why Choose Us</h2>
 					</div>
-					<p>Molestie at elementum eu facilisis sed odio. Scelerisque in dictum non consectetur a erat. Aliquam id diam maecenas ultricies mi eget mauris. Ultrices sagittis orci a scelerisque purus.</p>
+					<p>Molestie at elementum eu facilisis sed odio. Scelerisque in dictum non consectetur a erat.
+						Aliquam id diam maecenas ultricies mi eget mauris. Ultrices sagittis orci a scelerisque purus.
+					</p>
 					<div class="feature">
 						<i class="fa fa-check"></i>
 						<p>Quis varius quam quisque id diam vel quam elementum.</p>
@@ -428,7 +431,7 @@
 	<div id="numbers" class="section sm-padding">
 
 		<!-- Background Image -->
-		<div class="bg-img" style="background-image: url('./img/background2.jpg');">
+		<div class="bg-img" style="background-image: url('./assets/img/background2.jpg');">
 			<div class="overlay"></div>
 		</div>
 		<!-- /Background Image -->
@@ -495,110 +498,111 @@
 		<div class="container">
 
 			<!-- Row -->
-			<div class="row">
-
-				<!-- Section header -->
-				<div class="section-header text-center">
-					<h2 class="title">Pricing Table</h2>
-				</div>
-				<!-- /Section header -->
-
-				<!-- pricing -->
-				<div class="col-sm-4">
-					<div class="pricing">
-						<div class="price-head">
-							<span class="price-title">Basic plan</span>
-							<div class="price">
-								<h3>$9<span class="duration">/ month</span></h3>
-							</div>
-						</div>
-						<ul class="price-content">
-							<li>
-								<p>1GB Disk Space</p>
-							</li>
-							<li>
-								<p>100 Email Account</p>
-							</li>
-							<li>
-								<p>24/24 Support</p>
-							</li>
-						</ul>
-						<div class="price-btn">
-							<button class="outline-btn">Purchase now</button>
-						</div>
-					</div>
-				</div>
-				<!-- /pricing -->
-
-				<!-- pricing -->
-				<div class="col-sm-4">
-					<div class="pricing">
-						<div class="price-head">
-							<span class="price-title">Silver plan</span>
-							<div class="price">
-								<h3>$19<span class="duration">/ month</span></h3>
-							</div>
-						</div>
-						<ul class="price-content">
-							<li>
-								<p>1GB Disk Space</p>
-							</li>
-							<li>
-								<p>100 Email Account</p>
-							</li>
-							<li>
-								<p>24/24 Support</p>
-							</li>
-						</ul>
-						<div class="price-btn">
-							<button class="outline-btn">Purchase now</button>
-						</div>
-					</div>
-				</div>
-				<!-- /pricing -->
-
-				<!-- pricing -->
-				<div class="col-sm-4">
-					<div class="pricing">
-						<div class="price-head">
-							<span class="price-title">Gold plan</span>
-							<div class="price">
-								<h3>$39<span class="duration">/ month</span></h3>
-							</div>
-						</div>
-						<ul class="price-content">
-							<li>
-								<p>1GB Disk Space</p>
-							</li>
-							<li>
-								<p>100 Email Account</p>
-							</li>
-							<li>
-								<p>24/24 Support</p>
-							</li>
-						</ul>
-						<div class="price-btn">
-							<button class="outline-btn">Purchase now</button>
-						</div>
-					</div>
-				</div>
-				<!-- /pricing -->
-
+			<!-- Section header -->
+			<div class="section-header text-center">
+				<h2 class="title">Planes de hosting</h2>
 			</div>
-			<!-- Row -->
+			<!-- /Section header -->
+
+			<!-- pricing -->
+			<div class="col-sm-4">
+				<div class="pricing">
+					<div class="price-head">
+						<span class="price-title">Plan básico</span>
+						<p>Comienza tu negocio</p>
+						<div class="price">
+							<h3>S/59<span class="duration">/ año</span></h3>
+						</div>
+					</div>
+					<ul class="price-content">
+						<li>
+							<p>500MB de Espacio en Disco</p>
+						</li>
+						<li>
+							<p>2 Cuentas de Correos</p>
+						</li>
+						<li>
+							<p>Soporte 24/7</p>
+						</li>
+					</ul>
+					<div class="price-btn">
+						<button class="outline-btn">Comprar ahora</button>
+					</div>
+				</div>
+			</div>
+			<!-- /pricing -->
+
+			<!-- pricing -->
+			<div class="col-sm-4">
+				<div class="pricing">
+					<div class="price-head">
+						<span class="price-title">Plan intermedio</span>
+						<p>Haz crecer tu negocio</p>
+						<div class="price">
+							<h3>S/109<span class="duration">/ año</span></h3>
+						</div>
+					</div>
+					<ul class="price-content">
+						<li>
+							<p>1.5GB de Espacio en Disco</p>
+						</li>
+						<li>
+							<p>10 Cuentas de Correos</p>
+						</li>
+						<li>
+							<p>Soporte 24/7</p>
+						</li>
+					</ul>
+					<div class="price-btn">
+						<button class="outline-btn">Comprar ahora</button>
+					</div>
+				</div>
+			</div>
+			<!-- /pricing -->
+
+			<!-- pricing -->
+			<div class="col-sm-4">
+				<div class="pricing">
+					<div class="price-head">
+						<span class="price-title">Plan avanzado</span>
+						<p>Grandes negocios</p>
+						<div class="price">
+							<h3>S/149<span class="duration">/ año</span></h3>
+						</div>
+					</div>
+					<ul class="price-content">
+						<li>
+							<p>5GB de Espacio en Disco</p>
+						</li>
+						<li>
+							<p>100 Cuentas de Correos</p>
+						</li>
+						<li>
+							<p>Soporte 24/7</p>
+						</li>
+					</ul>
+					<div class="price-btn">
+						<button class="outline-btn">Comprar ahora</button>
+					</div>
+				</div>
+			</div>
+			<!-- /pricing -->
 
 		</div>
-		<!-- /Container -->
+		<!-- Row -->
+
+	</div>
+	<!-- /Container -->
 
 	</div>
 	<!-- /Pricing -->
 
 
 	<!-- Testimonial -->
-	<div id="testimonial" class="section md-padding">
+	<div id="testimonial" class="section md-padding hidden">
 
 		<!-- Background Image -->
-		<div class="bg-img" style="background-image: url('./img/background3.jpg');">
+		<div class="bg-img" style="background-image: url('./assets/img/background3.jpg');">
 			<div class="overlay"></div>
 		</div>
 		<!-- /Background Image -->
@@ -620,7 +624,8 @@
 								<h3 class="white-text">John Doe</h3>
 								<span>Web Designer</span>
 							</div>
-							<p class="white-text">Molestie at elementum eu facilisis sed odio. Scelerisque in dictum non consectetur a erat. Aliquam id diam maecenas ultricies mi eget mauris.</p>
+							<p class="white-text">Molestie at elementum eu facilisis sed odio. Scelerisque in dictum non
+								consectetur a erat. Aliquam id diam maecenas ultricies mi eget mauris.</p>
 						</div>
 						<!-- /testimonial -->
 
@@ -631,7 +636,8 @@
 								<h3 class="white-text">John Doe</h3>
 								<span>Web Designer</span>
 							</div>
-							<p class="white-text">Molestie at elementum eu facilisis sed odio. Scelerisque in dictum non consectetur a erat. Aliquam id diam maecenas ultricies mi eget mauris.</p>
+							<p class="white-text">Molestie at elementum eu facilisis sed odio. Scelerisque in dictum non
+								consectetur a erat. Aliquam id diam maecenas ultricies mi eget mauris.</p>
 						</div>
 						<!-- /testimonial -->
 
@@ -649,7 +655,7 @@
 	<!-- /Testimonial -->
 
 	<!-- Team -->
-	<div id="team" class="section md-padding">
+	<div id="team" class="section md-padding hidden">
 
 		<!-- Container -->
 		<div class="container">
@@ -659,7 +665,7 @@
 
 				<!-- Section header -->
 				<div class="section-header text-center">
-					<h2 class="title">Our Team</h2>
+					<h2 class="title">Our Team 2</h2>
 				</div>
 				<!-- /Section header -->
 
@@ -735,6 +741,56 @@
 	</div>
 	<!-- /Team -->
 
+	<!-- React -->
+	<div id="react" class="section md-padding bg-warning">
+		<!-- Container -->
+		<div class="container">
+			<!-- Row -->
+			<div class="row">
+				<!-- Section header -->
+				<div class="section-header text-center">
+					<h2 class="title">Add React in One Minute xD</h2>
+				</div>
+				<!-- /Section header -->
+
+				<p>This page demonstrates using React with no build tooling.</p>
+				<p>React is loaded as a script tag.</p>
+
+				<!-- item -->
+				<div class="col-md-4">
+					<p>
+						This is the first comment.
+						<!-- We will put our React component inside this div. -->
+						<div class="like_button_container" data-commentid="1"></div>
+					</p>
+				</div>
+				<!-- /item -->
+				<!-- item -->
+				<div class="col-md-4">
+					<p>
+						This is the first comment.
+						<!-- We will put our React component inside this div. -->
+						<div class="like_button_container" data-commentid="2"></div>
+					</p>
+				</div>
+				<!-- /item -->
+				<!-- item -->
+				<div class="col-md-4">
+					<p>
+						This is the first comment.
+						<!-- We will put our React component inside this div. -->
+						<div class="like_button_container" data-commentid="3"></div>
+					</p>
+				</div>
+				<!-- /item -->
+			</div>
+			<!-- /Row -->
+
+		</div>
+		<!-- /Container -->
+	</div>
+	<!-- /React -->
+
 	<!-- Blog -->
 	<div id="blog" class="section md-padding bg-grey">
 
@@ -746,7 +802,7 @@
 
 				<!-- Section header -->
 				<div class="section-header text-center">
-					<h2 class="title">Recents news</h2>
+					<h2 class="title">Últimas entradas</h2>
 				</div>
 				<!-- /Section header -->
 
@@ -763,7 +819,8 @@
 								<li><i class="fa fa-comments"></i>57</li>
 							</ul>
 							<h3>Molestie at elementum eu facilisis sed odio</h3>
-							<p>Nec feugiat nisl pretium fusce id velit ut tortor pretium. Nisl purus in mollis nunc sed. Nunc non blandit massa enim nec.</p>
+							<p>Nec feugiat nisl pretium fusce id velit ut tortor pretium. Nisl purus in mollis nunc sed.
+								Nunc non blandit massa enim nec.</p>
 							<a href="blog-single.html">Read more</a>
 						</div>
 					</div>
@@ -783,7 +840,8 @@
 								<li><i class="fa fa-comments"></i>57</li>
 							</ul>
 							<h3>Molestie at elementum eu facilisis sed odio</h3>
-							<p>Nec feugiat nisl pretium fusce id velit ut tortor pretium. Nisl purus in mollis nunc sed. Nunc non blandit massa enim nec.</p>
+							<p>Nec feugiat nisl pretium fusce id velit ut tortor pretium. Nisl purus in mollis nunc sed.
+								Nunc non blandit massa enim nec.</p>
 							<a href="blog-single.html">Read more</a>
 						</div>
 					</div>
@@ -794,7 +852,7 @@
 				<div class="col-md-4">
 					<div class="blog">
 						<div class="blog-img">
-							<img class="img-responsive"  src="./assets/img/blog3.jpg" alt="">
+							<img class="img-responsive" src="./assets/img/blog3.jpg" alt="">
 						</div>
 						<div class="blog-content">
 							<ul class="blog-meta">
@@ -803,7 +861,8 @@
 								<li><i class="fa fa-comments"></i>57</li>
 							</ul>
 							<h3>Molestie at elementum eu facilisis sed odio</h3>
-							<p>Nec feugiat nisl pretium fusce id velit ut tortor pretium. Nisl purus in mollis nunc sed. Nunc non blandit massa enim nec.</p>
+							<p>Nec feugiat nisl pretium fusce id velit ut tortor pretium. Nisl purus in mollis nunc sed.
+								Nunc non blandit massa enim nec.</p>
 							<a href="blog-single.html">Read more</a>
 						</div>
 					</div>
@@ -830,12 +889,12 @@
 
 				<!-- Section-header -->
 				<div class="section-header text-center">
-					<h2 class="title">Get in touch</h2>
+					<h2 class="title">Ponte en contacto</h2>
 				</div>
 				<!-- /Section-header -->
 
 				<!-- contact -->
-				<div class="col-sm-4">
+				<div class="col-sm-4 hidden">
 					<div class="contact">
 						<i class="fa fa-phone"></i>
 						<h3>Phone</h3>
@@ -845,21 +904,21 @@
 				<!-- /contact -->
 
 				<!-- contact -->
-				<div class="col-sm-4">
+				<div class="col-sm-4 hidden">
 					<div class="contact">
 						<i class="fa fa-envelope"></i>
 						<h3>Email</h3>
-						<p>email@support.com</p>
+						<p>info@arkitectoweb.com</p>
 					</div>
 				</div>
 				<!-- /contact -->
 
 				<!-- contact -->
-				<div class="col-sm-4">
+				<div class="col-sm-4 hidden">
 					<div class="contact">
 						<i class="fa fa-map-marker"></i>
-						<h3>Address</h3>
-						<p>1739 Bubby Drive</p>
+						<h3>Direccion</h3>
+						<p>Lima, Perú</p>
 					</div>
 				</div>
 				<!-- /contact -->
@@ -905,18 +964,20 @@
 
 					<!-- footer follow -->
 					<ul class="footer-follow">
-						<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-						<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-						<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-						<li><a href="#"><i class="fa fa-instagram"></i></a></li>
-						<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-						<li><a href="#"><i class="fa fa-youtube"></i></a></li>
+						<li><a href="https://fb.com/arkitectoweb" target="_blank"><i class="fa fa-facebook"></i></a>
+						</li>
+						<li class="hidden"><a href="#"><i class="fa fa-twitter"></i></a></li>
+						<li class="hidden"><a href="#"><i class="fa fa-google-plus"></i></a></li>
+						<li class="hidden"><a href="#"><i class="fa fa-instagram"></i></a></li>
+						<li class="hidden"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+						<li class="hidden"><a href="#"><i class="fa fa-youtube"></i></a></li>
 					</ul>
 					<!-- /footer follow -->
 
 					<!-- footer copyright -->
 					<div class="footer-copyright">
-						<p>Copyright © 2017. All Rights Reserved. Designed by <a href="https://colorlib.com" target="_blank">Colorlib</a></p>
+						<p>Copyright © 2017. All Rights Reserved. Designed by <a href="https://colorlib.com"
+								target="_blank">Colorlib</a></p>
 					</div>
 					<!-- /footer copyright -->
 
@@ -946,13 +1007,19 @@
 	</div>
 	<!-- /Preloader -->
 
+	<!-- React components -->
+	<script crossorigin  src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+	<script crossorigin  src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+
+	<!-- Load our React component. -->
+	<script type="text/javascript" src="assets/js/like_button.js"></script>
+
 	<!-- jQuery Plugins -->
 	<script type="text/javascript" src="assets/js/jquery.min.js"></script>
 	<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="assets/js/owl.carousel.min.js"></script>
 	<script type="text/javascript" src="assets/js/jquery.magnific-popup.js"></script>
 	<script type="text/javascript" src="assets/js/main.js"></script>
-
 </body>
 
 </html>

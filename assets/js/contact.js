@@ -17,9 +17,9 @@ function submitForm() {
     console.log('quiero enviar email');
     // Initiate Variables With Form Content
     var data = {
-        //service_id: 'default_service',
-        //template_id: 'template_tDtxcWkk',
-        //user_id: 'user_vUQFJt2jQDNLTKJ1MAqbU',
+        service_id: 'default_service',
+        template_id: 'template_n10A6fvX',
+        user_id: 'user_MuIOnlpt4NWxGNMG17xD6',
         template_params: {
             'email': $("#email").val(),
             'msg_subject': $("#msg_subject").val(),
@@ -28,10 +28,6 @@ function submitForm() {
         }
     };
 
-    console.log(data);
-    formSuccess();
-
-    /*
     // Send email by Email JS
     $.ajax('https://api.emailjs.com/api/v1.0/email/send', {
         type: 'POST',
@@ -46,8 +42,6 @@ function submitForm() {
         formError();
         submitMSG(false, JSON.stringify(error));
     });
-    // END Send email by Email JS
-    */
 }
 
 function formSuccess() {
@@ -63,9 +57,9 @@ function formError() {
 
 function submitMSG(valid, msg) {
     if (valid) {
-        var msgClasses = "h3 text-left tada animated text-success";
+        var msgClasses = "text-left tada animated text-success";
     } else {
-        var msgClasses = "h3 text-left text-danger";
+        var msgClasses = "text-left text-danger";
     }
     $("#msgSubmit").removeClass().addClass(msgClasses).text(msg);
 }

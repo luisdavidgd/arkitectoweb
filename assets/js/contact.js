@@ -1,20 +1,16 @@
 $("#contactForm").validator().on("submit", function (event) {
     if (event.isDefaultPrevented()) {
         // handle the invalid form...
-        console.log('handle the invalid form');
         formError();
         submitMSG(false, "Asegúrate de ingresar todos los campos de manera apropiada.");
     } else {
         // everything looks good!
-        console.log('everything looks good!');
         event.preventDefault();
         submitForm();
     }
 });
 
-
 function submitForm() {
-    console.log('quiero enviar email');
     // Initiate Variables With Form Content
     var data = {
         service_id: 'default_service',
@@ -35,10 +31,7 @@ function submitForm() {
         contentType: 'application/json'
     }).done(function () {
         formSuccess();
-        console.log('form-success');
     }).fail(function (error) {
-        console.log('###error!');
-        console.log(JSON.stringify(error));
         formError();
         submitMSG(false, JSON.stringify(error));
     });
@@ -46,13 +39,11 @@ function submitForm() {
 
 function formSuccess() {
     $("#contactForm")[0].reset();
-    submitMSG(true, "Message Submitted!")
+    submitMSG(true, "Mensaje enviado!")
 }
 
 function formError() {
-    $("#contactForm").removeClass().addClass('shake animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function () {
-        $(this).removeClass();
-    });
+    $("#contactForm").effect("shake");
 }
 
 function submitMSG(valid, msg) {

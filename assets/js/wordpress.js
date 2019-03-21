@@ -7,7 +7,8 @@ function get_latest_posts() {
         dataType: "json",
         success: function (data) {
             $.each(data, function (i, item) {
-                var image = 'assets/img/blog' + (i + 1) + '.jpg'; // default image
+                console.log(item);
+                var image = 'assets/img/blog.png'; // default image
                 if (item._embedded.hasOwnProperty('wp:featuredmedia')) { // if exists
                     image = item._embedded['wp:featuredmedia'][0].media_details.sizes.full.source_url;
                 }
